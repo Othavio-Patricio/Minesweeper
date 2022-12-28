@@ -1,0 +1,54 @@
+body {
+}
+
+.squares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  background-color: lightgrey;
+  border: 2px outset grey;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.square:hover {
+  background-color: grey;
+}
+
+.clicked {
+  border: 1px solid grey;
+  height: 20px;
+  width: 20px;
+}
+
+.clicked:hover {
+  background-color: lightgrey !important;
+}
+
+.mine {
+  background-color: red;
+}
+
+.break {
+  width: 100%;
+}
+
+.loss-screen {
+  display: none;
+}
+
+.win-screen {
+  display: none;
+}
